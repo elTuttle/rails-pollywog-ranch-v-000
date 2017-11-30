@@ -5,7 +5,7 @@ class TadpolesController < ApplicationController
     if @tadpole = Tadpole.find_by(id: params[:id])
       if @frog = Frog.create(name: @tadpole.name, color: @tadpole.color, pond_id: @tadpole.pond.id)
         @tadpole.destroy
-        redirect_to frog_path(@frong)
+        redirect_to frog_path(@frog)
       else
       end
     else
