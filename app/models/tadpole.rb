@@ -5,5 +5,5 @@ class Tadpole < ActiveRecord::Base
   def pond
     self.frog.pond
   end
-  
+
 end
