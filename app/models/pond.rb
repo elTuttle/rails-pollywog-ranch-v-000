@@ -1,4 +1,4 @@
 class Pond < ActiveRecord::Base
   has_many :frogs
-  has_many :tadpoles, through: :fgogs
+  has_many :tadpoles, through: :frogs
 end
