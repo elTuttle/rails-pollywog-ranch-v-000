@@ -2,9 +2,9 @@ class TadpolesController < ApplicationController
   before_action :set_tadpole, only: [:show, :edit, :update, :destroy, :metamorphosize]
 
   def metamorphosize
-    
+
   end
-  
+
   def index
     @tadpoles = Tadpole.all
   end
