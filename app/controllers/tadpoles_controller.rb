@@ -3,6 +3,7 @@ class TadpolesController < ApplicationController
 
   def metamorphosize
     if @tadpole = Tadpole.find_by(id: params[:id])
+      @frog = Frog.create(name: @tadpole.name, color: @tadpole.color)
     else
     end
   end
