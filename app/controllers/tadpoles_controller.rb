@@ -3,6 +3,8 @@ class TadpolesController < ApplicationController
 
   def metamorphosize
     if @tadpole = Tadpole.find_by(id: params[:id])
+    else
+    end
   end
 
   def index
